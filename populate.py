@@ -16,7 +16,7 @@ Tome_Rater.add_user("Alan Turing", "alan@turing.com")
 Tome_Rater.add_user("David Marr", "david@computation.org")
 
 #Add a user with three books already read:
-Tome_Rater.add_user("Marvin Minsky", "marvin@mit.edu", user_books=[book1, novel1, nonfiction1])
+Tome_Rater.add_user("Marvin Minsky", "marvin@mit.edu", books=[book1, novel1, nonfiction1])
 
 #Add books to a user one by one, with ratings:
 Tome_Rater.add_book_to_user(book1, "alan@turing.com", 1)
@@ -31,12 +31,12 @@ Tome_Rater.add_book_to_user(novel3, "david@computation.org", 4)
 
 
 #Uncomment these to test your functions:
-# Tome_Rater.print_catalog()
-# Tome_Rater.print_users()
+Tome_Rater.print_catalog()
+Tome_Rater.print_users()
 
-# print("Most positive user:")
-# print(Tome_Rater.most_positive_user())
-# print("Highest rated book:")
-# print(Tome_Rater.highest_rated_book())
-# print("Most read book:")
-# print(Tome_Rater.get_most_read_book())
+print("Most Positive User:")
+print(Tome_Rater.most_positive_user())
+print("Highest Rated Book:")
+print(Tome_Rater.highest_rated_book())
+print("Most Read Book:")
+print(Tome_Rater.get_most_read_book())
