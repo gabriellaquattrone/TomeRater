@@ -45,9 +45,9 @@ Books Read: {}
         if self.name == other_user.name and self.email == other_user.email:
             return True
         else:
+            print("The users {} and {} aren't the same users.".format(self.name, other_user.name))
+            print("Their emails, {} and {}, are different.".format(self.email, other_user.email))
             return False
-            print("The users {self.name} and {other_user.name} aren't the same users.".format(self.name, other_user.name))
-            print("Their emails, {self.email} and {other_user.email}, are different.".format(self.email, other_user.email))
 # The Book class defines books that have their own titles, isbns, and ratings for Users
 class Book:
     def __init__(self, title, isbn):
@@ -93,9 +93,9 @@ class Book:
         if self.title == other_book.title and self.isbn == other_book.isbn:
             return True
         else:
+            print("The books {} and {} have different titles.".format(self.title, other_book.title))
+            print("Their ISBN's, {} and {} respectively, are different.".format(self.isbn, other_book.isbn))
             return False
-            print("The books {self.title} and {other_book.title} have different titles.".format(self.title, other_book.title))
-            print("Their ISBN's, {self.isbn} and {other_book.isbn} respectively, are different.".format(self.isbn, other_book.isbn))
     def __repr__(self):
         return self.title
 # The Fiction class is a subclass of Book and defines fiction books.
